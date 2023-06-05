@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会員登録画面</title>
+    <link rel ="stylesheet" href="entry.css">
+</head>
+<body>
+    <h1>カレンダー</h1>
+        <form method="post" action="login.html">
+            <table width ="1000" border = "0">
+            <tr>
+                <th>名前</th>
+                <th><input type="text" maxlength="100" placeholder="山田太郎" id="name">
+                <th id="name_chk" style="display: none; color: red;">名前が漢字になっていません</th>
+                </tr>
+            </tr>
+            <tr>
+                <th>名前(ふりがな)</th>
+                <th><input type="text" maxlength="200" placeholder="やまだたろう" id="name_huri"></th>
+                <th id="name_huri_chk" style="display: none; color: red;">名前(ふりがな)がひらがなになっていません</th>
+            </tr>
+            <tr>
+                <th>メールアドレス</th>
+                <th><input type="text" maxlength="254" placeholder="aaaa@gmail.com" id="mail"></th>
+                <th id="mail_chk" style="display: none; color: red;">メールアドレスが形式に沿っていません</th>
+            </tr>
+            <tr>
+                <th>パスワード</th>
+                <th><input type="password" maxlength="20" placeholder="半角英数8文字以上" id="pass"></th>
+                <th id="pass_chk" style="display: none; color: red;">パスワードが半角英数8文字以上になっていません</th>
+            </tr>
+            <tr>
+                <th>パスワード再入力</th>
+                <th><input type="password" maxlength="20" placeholder="半角英数8文字以上" id="repass"></th>
+                <th id="repass_chk" style="display: none; color: red;">パスワードが最初と違っています</th>
+            </tr>
+            <tr>
+                <th>生年月日</th>
+                <th><input type="date" name="calendar" max="9999-12-31" id="birth"></th>
+            </tr>
+        </table>
+        <p><input type="submit"  value="登録" id="login" ></p>
+    </form>
+    <a href="login.html">すでに登録済みの方はこちら</a>
+    
+    <script src = "login.js" acync></script>
+
+    
+    </body>
+</html>
